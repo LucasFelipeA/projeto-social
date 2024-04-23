@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url('images/fundo-madeira.jpg') fixed center center;
+    background-size: cover;
+}
+li{
+    text-align: right;
+    padding: 5px;
+}
+li img{
+    width: 50px;
+    border-radius: 50%;
+}
+div#celular{
+    position: absolute;
+    width: 311px;
+    height: 627px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url('images/frame-iphone.png') fixed center center;
+}
+div#tela{
+    
+}
+div#tela > img{
+    margin-top: 26%;
+    margin-left: 7.1%;
+    width: 26px;
+}
+iframe#tela{
+    height: 473px;
+    overflow: hidden;
+}
