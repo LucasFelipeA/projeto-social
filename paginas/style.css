@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 268px;
+}
+#caixa{
+    width: 268px;
+    height: 30px;
+    background-color: darkred;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: -5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+#caixa:hover{
+    background-color: red;
+}
