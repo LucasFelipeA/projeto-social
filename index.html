@@ -1,4 +1,4 @@
-c:\Users\Lucas\Downloads\13675557-modelos-de-design-de-de-icone-de-botao-liga-desliga-gratis-vetor.jpg<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,34 @@ c:\Users\Lucas\Downloads\13675557-modelos-de-design-de-de-icone-de-botao-liga-de
 </head>
 <body>
     <section>
-        <a href="paginas/ON_OFF.html"><img src="images/logo-botao_ligar.png" style="background-color: white;" alt=""></a><br>
-        <a href="paginas/home.html" target="tela"><img src="images/logo-home.jpg" alt="menu"></a><br>
-        <a href="paginas/youtube.html" target="tela"><img src="images/logo-youtube.jpg" alt="youtube"></a><br>
-        <a href="paginas/github.html" target="tela"><img src="images/logo-github.jpg" alt="github"></a><br>
-        <a href="paginas/instagram.html" target="tela"><img src="images/logo-instagram.jpg" alt="instagram"></a><br>
-        <a href="paginas/twitter.html" target="tela"><img src="images/logo-twitter.jpg" alt="twitter"></a><br>
-        <a href="paginas/facebook.html" target="tela"><img src="images/logo-facebook.jpg" alt="facebook"></a><br>
-        <a href="paginas/discord.html" target="tela"><img src="images/logo-discord.ico" alt="Discord icone"></a>
+        <a onclick="clicka()"><img src="images/logo-botao_ligar.png" style="background-color: white;" alt="putz"></a><br>
+        <a href="paginas/home.html" target="tela" class="button"><img src="images/logo-home.jpg" alt="menu"></a><br>
+        <a href="paginas/youtube.html" target="tela" class="button"><img src="images/logo-youtube.jpg" alt="youtube"></a><br>
+        <a href="paginas/github.html" target="tela" class="button"><img src="images/logo-github.jpg" alt="github"></a><br>
+        <a href="paginas/instagram.html" target="tela" class="button"><img src="images/logo-instagram.jpg" alt="instagram"></a><br>
+        <a href="paginas/twitter.html" target="tela" class="button"><img src="images/logo-twitter.jpg" alt="twitter"></a><br>
+        <a href="paginas/facebook.html" target="tela" class="button"><img src="images/logo-facebook.jpg" alt="facebook"></a><br>
+        <a href="paginas/discord.html" target="tela" class="button"><img src="images/logo-discord.ico" alt="Discord icone"></a>
     </section>
     <div id="celular">
             <iframe src="paginas/home.html" name="tela" id="tela" frameborder="0"></iframe>
     </div>
-    
+    <script>
+        function clicka(){
+        var button = document.getElementsByClassName('button')
+        var ifr = document.getElementById('tela')
+        if (ifr.hidden == false){
+            ifr.hidden = true
+            for(let c = 0;c<7;c++){
+                button[c].hidden = true
+            }
+        }else{
+            ifr.hidden = false
+            for(let c = 0;c<7;c++){
+                button[c].hidden = false
+            }
+        }
+    }
+    </script>
 </body>
 </html>
